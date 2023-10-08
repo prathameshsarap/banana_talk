@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana speak</title>
 </head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* text-decoration: none; */
+        box-sizing: border-box;
+    }
+
+    #text {
+
+        padding: 2px;
+        margin: 3px;
+        width: 50%;
+        height: 200px;
+    }
+
+
+    .centre {
+        align-items: center;
+        align-content: center;
+        display: flex;
+        text-align: center;
+        display: block;
+        font-size: large;
+
+    }
+
+    .back {
+        display: block;
+        margin: auto;
+        width: 100px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: large;
+
+    }
+
+    #output {
+
+        display: block;
+        margin: auto;
+        width: 50%;
+        height: 200px;
+        border: 2px solid rgb(179, 173, 173);
+
+    }
+
+    .contained {
+        display: block;
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+        font-size: large;
+    }
+</style>
+
+
+
+
 <body>
-    <h1>talk banana</h1>
+    <div class="centre">
+
+        <h1>Talk Banana</h1>
+        <textarea placeholder="Put your text here we will covert it to bananaa" id="text" cols="30"
+            rows="10"></textarea>
+    </div>
+
+    <button class="back" id="btn-text">Translate</button>
+
     
+
+    <div class="contained">Output will come here</div>
+
+    <div  class ="hi" id="output"></div>
+
+    
+
+
+    <script src="app.js" type="text/javascript"></script>
+
 </body>
+
 </html>
