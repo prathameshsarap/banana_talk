@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mango speak</title>
+    <title>Banana speaks</title>
 </head>
 <style>
+    body{
+        font-family: Arial, sans-serif;
+    }
     * {
         margin: 0px;
         padding: 0px;
         /* text-decoration: none; */
         box-sizing: border-box;
+    }
+    h1 {
+        font-size: 36px;
+        color: #333;
+        background-color: #ffa500; 
+        padding: 20px 20px; /* Text color for the heading */
+        
     }
 
     #text {
@@ -20,6 +30,9 @@
         margin: 3px;
         width: 50%;
         height: 200px;
+        font-size: 18px;
+        border-radius: 10px; 
+        margin-top: 20px; 
     }
 
 
@@ -39,8 +52,13 @@
         width: 100px;
         text-decoration: none;
         cursor: pointer;
-        font-size: large;
+        font-size: 20px;
+        color: #fff; /* Text color for the button */
+        background-color: #ffa500; /* Background color for the button */
 
+    }
+    .back:hover {
+        background-color: #ff8500; /* Hover background color for the button */
     }
 
     #output {
@@ -49,7 +67,10 @@
         margin: auto;
         width: 50%;
         height: 200px;
+        font-size: 20px;
+        color: #333; /* Text color for the output */
         border: 2px solid rgb(179, 173, 173);
+        border-radius: 10px; 
 
     }
 
@@ -58,8 +79,26 @@
         margin: auto;
         width: 50%;
         padding: 20px;
-        font-size: large;
+        font-size: 20px;
+        color: #333; /* Text color for the contained text */
     }
+
+    /* ... Your existing styles ... */
+
+/* Style for the new div at the end */
+.banana-div {
+    font-size: 36px;
+    color: #fff; /* Text color for the div */
+    background-color: #ffa500; /* Orange background color */
+    padding: 20px; /* Increase padding for height */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for decorative effect */
+    /* Rounded corners for the div */
+     /* Set the width to 80% */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text horizontally within the div */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
 </style>
 
 
@@ -80,6 +119,9 @@
     <div class="contained">Output will come here</div>
 
     <div  class ="hi" id="output"></div>
+
+    <div class="banana-div">Banana speaked</div>
+
 
     
 
